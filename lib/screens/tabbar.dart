@@ -1,4 +1,5 @@
 import 'package:facebook_clone/screens/home_screen.dart';
+import 'package:facebook_clone/screens/menu_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -70,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           Text('video'),
           Text('video'),
           Text('video'),
-          Text('video'),
+          MenuScreen(),
         ]),
         
     );

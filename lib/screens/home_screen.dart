@@ -10,7 +10,6 @@ class HomeScreenPage extends StatelessWidget {
       borderSide:const BorderSide(color: Colors.grey)
     );
     return Scaffold(
-      backgroundColor: Colors.grey,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -38,7 +37,9 @@ class HomeScreenPage extends StatelessWidget {
                 ],
               ),
             ),
-            Text("......................................"),
+         const   Divider(
+              thickness:14,
+            ),
            
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -60,7 +61,6 @@ class HomeScreenPage extends StatelessWidget {
                         height: 170,
                         width: 100,
                         decoration: BoxDecoration(
-                          color: Colors.red,
                           borderRadius: BorderRadius.circular(10),
                         image:const DecorationImage(image: NetworkImage('https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80'),
                         fit: BoxFit.fill
@@ -85,15 +85,15 @@ class HomeScreenPage extends StatelessWidget {
                   }
                 ),
               ),
-            //  const Divider(thickness: 14,),
-            Text("................................."),
+             const Divider(thickness: 14,),
+         
         
              ListView.builder(
               itemCount: 5,
               shrinkWrap: true,
                itemBuilder: (context,index) {
                  return Padding(
-                   padding: const EdgeInsets.all(8.0),
+                   padding: const EdgeInsets.only(top: 4,bottom: 4),
                    child: Card(
                     child: SizedBox(
                       height: MediaQuery.of(context).size.height/2.2,
@@ -122,9 +122,9 @@ class HomeScreenPage extends StatelessWidget {
                          const Text('csfldksknvinad mcsvionhfiojojaOXHCSIUHIO WDHUEWBDVJSGBXYGDHJEWIUFHIFHDSKVJWGBYGDNUSDSHVGYGYUGE',textAlign: TextAlign.center,),
                           const  SizedBox(height: 10,),
                           Container(
-                            height: 150,
+                            height: 180,
                             decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 20, 56, 22),
+                              // color: Color.fromARGB(255, 20, 56, 22),
                               image:DecorationImage(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPO0lAaqweJovTtogSK_gWSChhWush-S0PZw&usqp=CAU'),fit: BoxFit.fill)
                             ),
                           ),
