@@ -1,5 +1,6 @@
 import 'package:facebook_clone/screens/home_screen.dart';
 import 'package:facebook_clone/screens/menu_screen.dart';
+import 'package:facebook_clone/screens/videos_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -67,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           controller: _controller,
           children:const [
          HomeScreenPage(),
-          Text('video'),
+         VideosScreen(),
           Text('video'),
           Text('video'),
           Text('video'),

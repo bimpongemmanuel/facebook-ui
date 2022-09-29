@@ -55,32 +55,32 @@ class MenuScreen extends StatelessWidget {
                 ),
                 onPressed: (){},
                child:  Center(child:  Text('See more',style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 15),))),
-                    SizedBox(width: 15,),
-                     Divider(),
+                  const  SizedBox(width: 15,),
+                  const   Divider(),
                Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                 Row(children: [
-                  Icon(Icons.handshake),SizedBox(width: 10,),
+                const  Icon(Icons.handshake),SizedBox(width: 10,),
                   Text('Community resources',style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 20))
                 ]),
                 
               const Icon(Icons.keyboard_arrow_down),
                ],),
-                Divider(), 
+               const Divider(), 
                Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                 Row(children: [
-                  Icon(Icons.question_mark),SizedBox(width: 10,),
+                const  Icon(Icons.question_mark),SizedBox(width: 10,),
                   Text('  Help & support',style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 20))
                 ]),
              const Icon(Icons.keyboard_arrow_down),
                ],),
-               Divider(),
+             const  Divider(),
                Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                 Row(children: [
-                  Icon(Icons.settings),SizedBox(width: 10,),
+                const  Icon(Icons.settings),SizedBox(width: 10,),
                   Text('Settings & privacy',style: Theme.of(context).textTheme.bodyText1!.copyWith(fontSize: 20))
                 ]),
                const Icon(Icons.keyboard_arrow_down),
