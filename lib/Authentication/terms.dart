@@ -1,4 +1,5 @@
 import 'package:facebook_clone/Authentication/password.dart';
+import 'package:facebook_clone/Authentication/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -39,7 +40,7 @@ class TermsScreen extends StatelessWidget {
                         )
                       ),
                       onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const TermsScreen(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpScreen(),));
                       },
                      child:  Center(child:  Text('Sign up',style: Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.white,fontSize: 15),),)),
              

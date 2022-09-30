@@ -153,7 +153,7 @@ class _PersonScreenState extends State<PersonScreen> {
             ),
             TextButton(
               style: TextButton.styleFrom(
-                  backgroundColor: Color(0xFF99C7EC),
+                  backgroundColor: const Color(0xFF99C7EC),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10))),
               onPressed: () {},
@@ -204,7 +204,7 @@ class _PersonScreenState extends State<PersonScreen> {
                   ProfileCard(),
                 ],
               ),
-            ),SizedBox(height: 10,),
+            ),const SizedBox(height: 10,),
              TextButton(
                     style: TextButton.styleFrom(
                         backgroundColor: Colors.grey,
@@ -218,7 +218,7 @@ class _PersonScreenState extends State<PersonScreen> {
                       ),
                     ),
                   ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             ListView.builder(
                 itemCount: 7,
                 shrinkWrap: true,
@@ -359,9 +359,9 @@ class _PersonScreenState extends State<PersonScreen> {
 
   Widget buildCoverImage() => Container(
         
-         decoration: BoxDecoration(
+         decoration: const BoxDecoration(
             color: Colors.grey,
-            borderRadius: BorderRadius.vertical(),
+            borderRadius:  BorderRadius.vertical(),
          ),
         child: Image.network(
           'https://images.unsplash.com/photo-1522307837370-cc113a36b784?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',

@@ -19,8 +19,8 @@ class ProfileCard extends StatelessWidget {
             //  mainAxisSize: MainAxisSize.min,
              crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.network('https://images.unsplash.com/photo-1571901205848-96622809cf6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',fit: BoxFit.fill,height: 70,),SizedBox(width: 20,),
-        Text('Blacko',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),)
+        Image.network('https://images.unsplash.com/photo-1571901205848-96622809cf6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',fit: BoxFit.fill,height: 70,),const SizedBox(width: 20,),
+        const Text('Blacko',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),)
       ],
             ),
           ),

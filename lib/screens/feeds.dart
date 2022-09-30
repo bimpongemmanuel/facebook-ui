@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class FeedScreen extends StatelessWidget {
   const FeedScreen({Key? key}) : super(key: key);
@@ -9,6 +7,8 @@ class FeedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
+        automaticallyImplyLeading: false,
         elevation: 0,
         backgroundColor: Colors.white,
         title: const Text(
@@ -25,7 +25,7 @@ class FeedScreen extends StatelessWidget {
             elevation: 0,
             mini: true,
             onPressed: () {},
-            child: Icon(
+            child: const Icon(
               Icons.search,
               color: Colors.black,
             ),

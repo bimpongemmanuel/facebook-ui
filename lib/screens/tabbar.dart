@@ -1,6 +1,7 @@
 import 'package:facebook_clone/screens/feeds.dart';
 import 'package:facebook_clone/screens/home_screen.dart';
 import 'package:facebook_clone/screens/menu_screen.dart';
+import 'package:facebook_clone/screens/notification.dart';
 import 'package:facebook_clone/screens/person_screen.dart';
 import 'package:facebook_clone/screens/videos_screen.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
         title: const Text('facebook',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,fontSize: 30),),
         centerTitle: false,
@@ -73,8 +75,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
          VideosScreen(),
          PersonScreen(),
          FeedScreen(),
-          Text('video'),
-          MenuScreen(),
+         NotificationPage(),
+         MenuScreen(),
         ]),
         
     );
