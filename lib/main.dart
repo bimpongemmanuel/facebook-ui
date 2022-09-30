@@ -1,4 +1,5 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:facebook_clone/screens/person_screen.dart';
 import 'package:facebook_clone/screens/tabbar.dart';
 import 'package:facebook_clone/splash_view.dart';
 import 'package:flutter/foundation.dart';
@@ -16,7 +17,7 @@ void main() {
       builder: DevicePreview.appBuilder,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      home:const HomeScreen(),
+      home:const PersonScreen(),
     )
      )
   );
