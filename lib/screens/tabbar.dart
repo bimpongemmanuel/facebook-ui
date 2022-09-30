@@ -1,3 +1,4 @@
+import 'package:facebook_clone/screens/feeds.dart';
 import 'package:facebook_clone/screens/home_screen.dart';
 import 'package:facebook_clone/screens/menu_screen.dart';
 import 'package:facebook_clone/screens/person_screen.dart';
@@ -71,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
          HomeScreenPage(),
          VideosScreen(),
          PersonScreen(),
-          Text('video'),
+         FeedScreen(),
           Text('video'),
           MenuScreen(),
         ]),
