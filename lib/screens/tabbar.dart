@@ -1,8 +1,8 @@
 import 'package:facebook_clone/screens/feeds.dart';
+import 'package:facebook_clone/screens/friends.dart';
 import 'package:facebook_clone/screens/home_screen.dart';
 import 'package:facebook_clone/screens/menu_screen.dart';
 import 'package:facebook_clone/screens/notification.dart';
-import 'package:facebook_clone/screens/person_screen.dart';
 import 'package:facebook_clone/screens/videos_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         centerTitle: false,
         actions: [
          FloatingActionButton(
+          heroTag: 'btn1',
           elevation: 0,
           mini: true,
           backgroundColor: Colors.grey[200],
@@ -40,6 +41,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
          child:const Icon(Icons.add,color: Colors.black),),
         const SizedBox(width: 10,),
          FloatingActionButton(
+          heroTag: 'btn2',
           elevation: 0,
           mini: true,
           backgroundColor: Colors.grey[200],
@@ -47,6 +49,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
          child:const Icon(Icons.search,color: Colors.black),),
          const SizedBox(width: 10,),
          FloatingActionButton(
+          heroTag: 'btn3',
           elevation: 0,
           mini: true,
           backgroundColor: Colors.grey[200],
@@ -62,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           tabs:const [
               Tab(icon: Icon(Icons.home,color: Colors.black,),),
               Tab(icon: Icon(Icons.tv,color: Colors.black),),
-              Tab(icon: Icon(Icons.person,color: Colors.black),),
+              Tab(icon: Icon(Icons.group,color: Colors.black),),
               Tab(icon: Icon(Icons.feed,color: Colors.black),),
               Tab(icon: Icon(Icons.notifications,color: Colors.black)),
               Tab(icon: Icon(Icons.menu,color: Colors.black),),
@@ -73,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           children:const [
          HomeScreenPage(),
          VideosScreen(),
-         PersonScreen(),
+         FriendsScreen(),
          FeedScreen(),
          NotificationPage(),
          MenuScreen(),

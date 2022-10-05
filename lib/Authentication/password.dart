@@ -1,5 +1,6 @@
 import 'package:facebook_clone/Authentication/number.dart';
 import 'package:facebook_clone/Authentication/terms.dart';
+import 'package:facebook_clone/screens/tabbar.dart';
 import 'package:flutter/material.dart';
 
 class PasswordScreen extends StatelessWidget {
@@ -45,7 +46,7 @@ class PasswordScreen extends StatelessWidget {
                         )
                       ),
                       onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const TermsScreen(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen(),));
                       },
                      child:  Center(child:  Text('Next',style: Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.white,fontSize: 15),),)),
              

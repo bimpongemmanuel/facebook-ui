@@ -1,3 +1,5 @@
+import 'package:facebook_clone/login_screen.dart';
+import 'package:facebook_clone/screens/person_screen.dart';
 import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -11,13 +13,18 @@ class MenuScreen extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(children: [
-            const ListTile(
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage(
-                    'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
+            GestureDetector(
+              child: const ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
+                ),
+                title: Text('Blacko'),
+                subtitle: Text('See your proflle'),
               ),
-              title: Text('Blacko'),
-              subtitle: Text('See your proflle'),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const PersonScreen(),));
+              },
             ),
             Row(
               children: [
@@ -169,7 +176,9 @@ class MenuScreen extends StatelessWidget {
                     backgroundColor: Colors.grey[200],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5))),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const LogInScreen(),));
+                },
                 child: Center(
                     child: Text(
                   'Log out',
@@ -200,6 +209,7 @@ class MenuScreen extends StatelessWidget {
       ),
       actions: [
         FloatingActionButton(
+          heroTag: 'btn1',
           backgroundColor: Colors.grey[200],
           elevation: 0,
           mini: true,
@@ -213,6 +223,7 @@ class MenuScreen extends StatelessWidget {
           width: 10,
         ),
         FloatingActionButton(
+          heroTag: 'btn2',
           backgroundColor: Colors.grey[200],
           elevation: 0,
           mini: true,
